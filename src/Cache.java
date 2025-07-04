@@ -69,7 +69,7 @@ class EvictionPolicy{
     }
 
     public void keyAccessed(String key){
-        detachNode(mapper.get(key));
+     //   detachNode(mapper.get(key));
         addNodeAtEnd(mapper.get(key));
         return;
     }
